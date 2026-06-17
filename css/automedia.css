@@ -9,7 +9,7 @@
 :root {
   color-scheme: light;
   --bg:      #FCFCFA;   /* warm white */
-  --bg-2:    #F4F3EE;   /* faint section band */
+  --bg-2:    #FBF6DF;   /* soft paper cream — warmer/softer than grey */
   --ink:     #1B1A18;   /* near-black */
   --muted:   #6A675F;
   --faint:   #908C83;
@@ -152,6 +152,22 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -.02em
 .foot-meta { margin-top: 26px; color: var(--faint); font-size: .86rem; }
 .foot-meta a { color: var(--muted); border-bottom: 1px solid var(--line-2); transition: color .2s, border-color .2s; }
 .foot-meta a:hover { color: var(--accent); border-color: var(--accent); }
+
+/* work section sits on soft paper cream + carries the folded-in mission */
+.work { background: var(--bg-2); }
+.work .mission-line { font-family: var(--serif); font-weight: 500; font-size: clamp(1.5rem, 3.4vw, 2.3rem); line-height: 1.22; letter-spacing: -.02em; max-width: 26ch; margin-top: clamp(46px, 7vw, 80px); }
+.work .mission-line .em { color: var(--accent); font-style: italic; }
+
+/* brand-card imagery (spool mark + James face) */
+.bcard .bmedia { height: 80px; display: flex; align-items: flex-end; margin-bottom: 18px; }
+.bcard .bmedia .mark { height: 46px; width: 46px; border-radius: 10px; }
+.bcard .bmedia .face { height: 80px; width: auto; filter: drop-shadow(0 10px 16px rgba(0,0,0,.14)); }
+
+/* contact CTA, merged into the footer */
+.foot-cta { text-align: center; padding-bottom: clamp(40px, 6vw, 60px); margin-bottom: clamp(34px, 5vw, 50px); border-bottom: 1px solid var(--line); }
+.foot-cta .label { display: block; margin-bottom: 14px; }
+.foot-cta h2 { font-size: clamp(1.8rem, 4.6vw, 2.9rem); margin-bottom: 14px; }
+.foot-cta p { color: var(--muted); max-width: 48ch; margin: 0 auto 26px; }
 
 /* ---- reveal ---- */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
