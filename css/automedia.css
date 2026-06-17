@@ -153,10 +153,13 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -.02em
 .foot-meta a { color: var(--muted); border-bottom: 1px solid var(--line-2); transition: color .2s, border-color .2s; }
 .foot-meta a:hover { color: var(--accent); border-color: var(--accent); }
 
-/* work section sits on soft paper cream + carries the folded-in mission */
-.work { background: var(--bg-2); }
-.work .mission-line { font-family: var(--serif); font-weight: 500; font-size: clamp(1.5rem, 3.4vw, 2.3rem); line-height: 1.22; letter-spacing: -.02em; max-width: 26ch; margin-top: clamp(46px, 7vw, 80px); }
-.work .mission-line .em { color: var(--accent); font-style: italic; }
+/* the WHY / manifesto sits on soft paper cream (a press → paper) */
+.why { background: var(--bg-2); }
+.why-head { font-size: clamp(1.9rem, 4.6vw, 3rem); max-width: 18ch; margin: 16px 0 26px; }
+.why-body { color: var(--muted); font-size: 1.12rem; line-height: 1.62; max-width: 56ch; margin-bottom: 18px; }
+.why-body .em { color: var(--accent); font-style: italic; }
+.why-close { font-family: var(--serif); font-weight: 500; font-size: clamp(1.45rem, 3.2vw, 2.15rem); letter-spacing: -.02em; margin-top: 18px; }
+.why-close .em { color: var(--accent); font-style: italic; }
 
 /* brand-card imagery (spool mark + James face) */
 .bcard .bmedia { height: 80px; display: flex; align-items: flex-end; margin-bottom: 18px; }
